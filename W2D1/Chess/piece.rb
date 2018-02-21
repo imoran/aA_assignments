@@ -4,10 +4,9 @@ class Piece
 
   def initialize(color, board, pos)
     @piece = :piece
-    @piece_emoji = nil
     @board = board
     @pos = pos
-    @color
+    @color = color
   end
 
   def inspect
