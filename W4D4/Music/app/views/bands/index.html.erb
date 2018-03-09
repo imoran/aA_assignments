@@ -1,0 +1,7 @@
+<h1>Bands</h1>
+
+<% Band.all.each do |band| %>
+  <p><%= band.name %></p>
+<% end %>
+
+<%= link_to "Create New Band", new_band_url %>

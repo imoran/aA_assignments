@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header>
+      <h1 class='title'>Music App</h1>
+      <% if current_user %>
+        <p>Signed in as: <%= current_user.email %>!</p>
+        <form action="<%= session_url %>" method="post"/>
+          <input type="hidden" name="_method" value="DELETE"/>
+            <input type="submit" name="" value="Logout">
+        </form>
+      <% else %>
+        <p class="link"><%= link_to 'Login', new_session_url %></p>
+        <p class="link"><%= link_to 'Sign Up', new_user_url %></p>
+      <% end %>
+      <% flash.each do |key, value| %>
+        <div><%= value %></div>
+      <% end %>
+    </header>
+    <%= yield %>
+  </body>
+</html>
