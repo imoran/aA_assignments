@@ -1,0 +1,90 @@
+.main-story a p {
+  font-family: $serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.main-story a p:hover {
+  text-decoration: underline;
+}
+
+.author {
+  color: $gray;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.main-story ul {
+  list-style-type: disc;
+}
+
+.main-story a:hover {
+  text-decoration: underline;
+}
+
+.main-story a {
+  color: $blue;
+  font-family: $sans-serif;
+  font-size: 10px;
+}
+
+.media .subtitle .author p {
+  display: flex;
+  // border-bottom: 1px solid black;
+  padding: 10px 0 ;
+  margin-bottom: 50px;
+}
+
+.media-caption {
+  padding: 10px 0px;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.sub-title a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.media .sub-title {
+  border-top: 1px solid black;
+  margin-bottom: 3px;
+}
+
+.opinion-title {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.opinion-subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.opinion ul {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.opinion ul li {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.sign-up{
+  border: 1px solid black;
+  height: 20px;
+  margin: 5px 0px;
+  width: 200px;
+}

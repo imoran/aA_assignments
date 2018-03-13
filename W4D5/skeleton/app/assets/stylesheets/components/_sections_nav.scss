@@ -1,0 +1,32 @@
+.mast {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  border-bottom: 1px solid $gray;
+}
+
+.mast ul {
+  display: flex;
+	font-family: $sans-serif;
+	font-size: 11px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mast ul li {
+  margin-right: 15px;
+}
+
+.mast ul li :hover {
+  background-color: $light-gray;
+  cursor: pointer;
+}
+
+.mast-all :hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mast-all{
+  text-transform: uppercase;
+}
