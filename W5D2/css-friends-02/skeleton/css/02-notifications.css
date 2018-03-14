@@ -1,0 +1,30 @@
+/* PHASE 2: Notifications */
+.header-list li:hover span {
+  background-color: red;
+}
+
+.header-list li:hover ul {
+  display: block;
+}
+
+.badge {
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding: 1px 6px;
+    text-align: center;
+    border-radius:50%;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.notifications  {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  /* visibility: hidden; */
+  color: black;
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+  margin: 10px;
+}

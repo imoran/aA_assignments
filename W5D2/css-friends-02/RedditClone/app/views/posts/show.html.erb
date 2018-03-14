@@ -1,0 +1,24 @@
+<h1><%= @post.title %></h1>
+<dl class="">
+  <dt>Url</dt>
+  <dd><%= @post.url %></dd>
+  <dt>Content</dt>
+  <dd><%= @post.content %></dd>
+  <dt>Author</dt>
+  <dd><%= @post.author.username %></dd>
+</dl>
+
+
+<ul>
+  <% @post.subs.each do |s|  %>
+    <li>
+      <a href="<%= sub_url(s) %>">
+        <%= s.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<% if current_user.id == @post.author_id.to_i %>
+  <%= link_to 'Edit Post', edit_post_url(@post) %>
+<% end %>
