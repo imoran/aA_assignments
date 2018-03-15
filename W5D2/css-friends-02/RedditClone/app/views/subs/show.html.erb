@@ -1,0 +1,14 @@
+<h1><%= @sub.title  %></h1>
+
+Moderator: <%= @sub.moderator.username %>
+<br>
+Description: <%= @sub.description %>
+<% @sub.posts.each do |post| %>
+  <li>
+  <%= link_to post.title, post_url(post) %>
+</li>
+<% end %>
+<br>
+<%= link_to 'Make Post', new_post_url %>
+<br><br>
+<%= link_to 'Back To All Subs', subs_url %>
