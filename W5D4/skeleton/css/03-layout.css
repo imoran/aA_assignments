@@ -1,0 +1,22 @@
+/* PHASE 3: Layout */
+.content {
+  background-color: white;
+  min-height: 200px;
+  margin-left: 285px;
+  margin-bottom: 300px;
+  margin-right: 285px;
+  border: 1px solid #dcdcdc;
+}
+
+.content-sidebar {
+  min-height: 200px;
+  background-color: white;
+  width: 198px;
+  border-right: 1px solid #dcdcdc;
+}
+
+.content-main {
+  min-height: 200px;
+  background-color: green;
+  width: 200px;
+}
