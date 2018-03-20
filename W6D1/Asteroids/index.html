@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+      let canvas = document.getElementById("game-canvas");
+      let ctx = canvas.getContext('2d');
+      ctx.fillStyle = "black";
+      ctx.fillRect(0, 0, 1000, 600);
+    });
+    </script>
+  </head>
+  <body>
+    <canvas id="game-canvas" width="1000" height="600"></canvas>
+    <script type="text/javascript" src="./lib/bundle.js"></script>
+  </body>
+</html>
