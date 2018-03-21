@@ -1,0 +1,35 @@
+.ttt {
+  /* margin: auto; */
+  /* width: 100%; */
+  justify-content: center;
+  display: flex;
+}
+
+body {
+  text-align: center;
+}
+
+li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  list-style: none;
+  border: 1px solid black;
+  font-size: 70px;
+  text-transform: uppercase;
+
+
+}
+
+ul {
+  max-width: 608px;
+}
+
+li.square:hover {
+  background-color: yellow;
+}
+
+.clicked {
+  background-color: purple;
+}
